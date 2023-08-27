@@ -1,0 +1,116 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+.html{
+    scroll-behavior: smooth;
+}
+body{
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    background-attachment: fixed;
+    
+    
+}
+.logo{
+    color: #21fd16;
+    font-size: 40px;
+    font-family: sans-serif;
+}
+.logo span{
+    color: #fff;
+}
+.menu_bar{
+    height: 100px;
+    width: 90%;
+    display:flex;
+    align-items:center;
+    font-weight: bold;
+    justify-content: space-between;
+    left: 500px; 
+    margin: auto;
+}
+.searchbar{
+    width: 330px;
+    border: 03px solid black;
+    
+}
+.searchbar input{
+    background: transparent;
+    border: 0px;
+    outline: 0px;
+    width: 300px;
+    max-width: 90%;
+    right: 56px;
+}
+
+.icon-search{
+    color: #21fd16;
+    font-size: 20px;
+    position: absolute;
+    top: 6px;
+    right: 12px;
+}
+.filter{
+    text-decoration: none;
+    background: transparent;
+    display:flex;
+    position: absolute;
+    right: 450px;
+    top: 40px;
+    font-size: 25px;
+
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    overflow: hidden;
+    position: absolute;
+    overflow-x: hidden;
+    place-items: center;
+}
+.container,project{
+    background-color: #fff;
+    border: 2px solid black;
+    color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    width: 950px;
+    margin: 10px;
+    border-radius: 30px;
+    box-shadow: (#21fd16) 0px 60px -7px;
+
+}
+.project,img{
+    border-radius: 50%;
+    height: 75px;
+    width: 75px;
+    position: absolute;
+    
+}
+.project,h2{
+    position: absolute;
+    color: #000000;
+}
+.project,p{
+    position: absolute;
+    color: #000000;
+    padding: 0px;
+    background: transparent;
+    background-color: #fff;
+    left: 100px;
+    size: 25px;
+    top: 38px;
+    font-size: 20px;
+}
+
+    
+
