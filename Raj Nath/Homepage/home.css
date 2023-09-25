@@ -10,6 +10,7 @@
 
 }
 
+
 /* Custom Scroll Bar CSS */
 ::-webkit-scrollbar {
     width: 10px;
@@ -37,7 +38,7 @@ nav{
 }
 nav.sticky{
   background:linear-gradient(45deg,#3d9ae7,#e91e63);
-  padding: 5px 0;
+  padding: 12pxpx 0;
 }
 nav .navbar{
   width: 90%;
@@ -120,35 +121,64 @@ nav.sticky .menu-btn{
 }
 
 /* home section styling */
-.home{
-  height: 100vh;
-  width: 100%;
-background: url(126.png);
+/* home */
+.hm{
+
+ background-image: url();
 background-repeat: no-repeat;
 background-size: cover;
 background-attachment: fixed;
-  font-family:"Poppins", sans-serif;
 }
-.home .media-icons a i{
-  margin-left: 28px;
-position:relative;
-  margin-top: 30px;
+.home {
+  position: relative;
+  min-height: 100vh;
+  width: 100%;
+  background: url(bg-dot.png), url(bg-dot.png), url(bg-round.png), url(bg-tree.png);
+  background-position: 10px 10px, bottom 215px right 10px, left 55% top -1%, left 45% bottom -1px;
+  background-repeat: no-repeat;
+}
+.curveImg {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  pointer-events: none;
+}
+.media-icons a {
+  display: inline-flex;
+  justify-content: center; 
+  align-items: center;
+  width: 3rem; height: 3rem; 
+  background: transparent; 
+  border: .1rem solid #0ef; 
+  color: #0ef;
+  border-radius: 50%;
+  font-size: 1.5rem;
+  margin-left: 20px;
+  transition: .5s;
+  }
+  .media-icons a:hover{
+      background-color: #0ef;
+      color:#323946;
+      box-shadow: 0 0 1rem #0ef;
+  }
+
+.lek{
+
 
 }
-.home .media-icons a i:hover{
-  transform: scale(1.5);
-  filter:grayscale(25);
-}
 
-.home .home-content{
-  width: 90%;
-  height: 100%;
-  margin: auto;
+.home-content{
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  height: 100%;
+  width: 100%;
+  padding: 0 60px;
+  gap: 30px;
+  justify-content: space-between;
+  
 }
-.home .text-one{
+ .text-one{
   font-size: 20px;
   color: #21fd16;
 }
@@ -157,8 +187,9 @@ position:relative;
 }
 .text-two {
   font-size: 45px;
+  ;
     color: transparent;
-    padding: 0 2px;
+    padding: 30px 2px;
     -webkit-text-stroke: 1px #fff;
     background: url(back.png);
     -webkit-background-clip: text;
@@ -171,36 +202,32 @@ position:relative;
       background-position: 2000px 0;
     }
 }
-.home .text-three{
-  font-size: 40px;
-  margin: 5px 0;
-  color: #4070f4;
+.home .cn {
+  width: 40%;
+
+
 }
-.home .text-four{
-  font-size: 23px;
-  margin: 5px 0;
-  color: #0E2431;
+
+.home_img {
+  width: 100%;
+  z-index: 10;
+  position: relative;
 }
-.home .button{
-  margin: 14px 0;
+@media (width < 860px) {
+
+  .home-content {
+    flex-direction: column;
+    padding: 0 20px;
+    justify-content: center;
+  }
+  .home .home-content .cn {
+    width: 100%;
+  }
 }
-.home .button button{
-  outline: none;
-  padding: 8px 16px;
-  border-radius: 6px;
-  font-size: 25px;
-  font-weight: 400;
-  background: #4070f4;
-  color: #fff;
-  cursor: pointer;
-  border: 2px solid transparent;
-  transition: all 0.4s ease;
-}
-.home .button button:hover{
-  border-color: #4070f4;
-  background-color: #fff;
-  color: #4070f4;
-}
+
+
+
+
 
 /* About Section Styling */
 /* Those Elements Where We Have Apply Same CSS,
@@ -1041,7 +1068,7 @@ body {
 
 /* My Services CSS */
 .services{
-  background-image: url('mountain-snow-snowy-alp.jpg');
+  background:linear-gradient(#fff,#2196f3);
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -2395,7 +2422,7 @@ margin-top: 20px;
   section .content{
     width: 85%;
   }
-}
+
 .home .text-one{
 padding: 10px;
 align-items: center;
@@ -2411,6 +2438,7 @@ font-size: 1.5em;
 nav .menu-btn{
  padding-top: 4px;
 }
+}
 @media (width < 890px) {
   .services .boxes .box{
     margin: 20px 0;
@@ -2418,7 +2446,8 @@ nav .menu-btn{
   }
 }
 
-@media (width < 890px) {
+@media (width < 1001px) {
+ 
   nav .navbar{
     width: 90%;
   }
@@ -2492,7 +2521,8 @@ nav .menu-btn{
   }
   .home .text-two{
     font-size: 30px;
-    padding: 17px;
+    padding: 10px;
+
   }
   nav .navbar .logo a{
     font-size: 30px;
@@ -2512,15 +2542,21 @@ padding-bottom: 50px;
   nav .menu-btn{
     margin-top: -5px;
   }
+  .home .home-content .media-icons a{
+    font-size: 1.5rem;
+    margin-left: 17px;
+    width: 2.5rem; height: 2.5rem; 
+    border: .1rem solid #0ef; 
+      }
 }
 @media (width<289px){
 
   .home .text-two{
     font-size: 28px;
-    padding: 17px;
+    padding: 10px;
   }
   .home .home-content .media-icons i{
-font-size: 17px;
+
 
   }
 }
