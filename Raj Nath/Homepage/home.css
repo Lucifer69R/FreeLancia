@@ -124,7 +124,7 @@ nav.sticky .menu-btn{
 /* home */
 .hm{
 
- background-image: url();
+ background:black;
 background-repeat: no-repeat;
 background-size: cover;
 background-attachment: fixed;
@@ -499,15 +499,12 @@ transition: all ease 1s;
 
 
 
-@media (max-width: 1024px) {
+@media (max-width: 1252px) {
   .responsive-container-block.Container {
     max-width: 850px;
   }
 
-  .mainImg {
-    width: 55%;
-    height: auto;
-  }
+
 
   .allText {
     width: 40%;
@@ -518,14 +515,14 @@ transition: all ease 1s;
   }
 
   .responsive-container-block.bigContainer {
-    padding-top: 10px;
+
     padding-right: 10px;
     padding-bottom: 10px;
     padding-left: 10px;
   }
 
   .responsive-container-block.Container.bottomContainer {
-    margin-top: 80px;
+
     margin-right: auto;
     margin-bottom: 50px;
     margin-left: auto;
@@ -607,8 +604,9 @@ transition: all ease 1s;
   }
 
   .allText.bottomText {
-    width: 40%;
-  }
+    width: 100%;
+      align-items: flex-start;
+    }
 
   .purpleBox {
     bottom: auto;
@@ -1068,7 +1066,7 @@ body {
 
 /* My Services CSS */
 .services{
-  background:linear-gradient(#fff,#2196f3);
+  background-image: url(mountain-snow-snowy-b.jpg);
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -1672,6 +1670,14 @@ body {
   .wk-mobile-12 {
     width: 100%;
   }
+}
+@media (max-width: 352px) {
+.heading-text{
+
+  font-size: 30px;
+  position: relative;
+  left: 10px;
+}
 }
 /* Contact Me CSS */
 .contact{
@@ -2335,6 +2341,7 @@ footer{
   text-decoration: none;
   color:#f2f2f2;
   margin-bottom: 5px;
+
   position: relative;
   transition: 0.3s ease;
 }
@@ -2358,8 +2365,11 @@ footer{
 }
 .col .contact-details{
   display: block;
+  position: relative;
   justify-content: space-between;
-margin-top: 20px;
+  margin-top: 10px;
+  bottom: 30px;
+
 
 }
 
