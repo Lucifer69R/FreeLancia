@@ -45,5 +45,8 @@ for (var i = 0; i < navLinks.length; i++) {
     menuBtn.style.pointerEvents = "auto";
   });
 }
-
+VanillaTilt.init(document.querySelectorAll(".box"), {
+  max: 25,
+  speed: 400
+});
 
